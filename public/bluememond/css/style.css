@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+p.uname {
+    color: green;
+    font-weight: bold;
+}
+p.text {
+    color: blueviolet;
+}
+
+button.submit {
+    background-color: burlywood;
+    color: black;
+    border-radius: 5px;
+    width: 90%;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: large;
+}
+
+button.admin {
+    background-color: red;
+    color: azure;
+    border-radius: 5px;
+    width: 90%;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: large;
+}
+
+#output {
+    background-color: bisque;
+    overflow: auto;
+    height: 300px;
+    border-radius: 15px;
+    width: 100%;
+    border-left: 5%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+div .wrap {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+}
+
+div.wrap div {
+    position: relative;
+    margin: 50px 0;
+}
+label {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    margin: 10px;
+    padding: 0 10px;
+    color: black;
+    -webkit-transition: top .2s ease-in-out,
+                        font-size .2s ease-in-out;
+    transition: top .2s ease-in-out,
+                font-size .2s ease-in-out;
+}
+
+.active {
+    top: -25px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: wheat;
+    color: black;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+textarea {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: wheat;
+    color: black;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+span.red_text {
+    color: red;
+}
