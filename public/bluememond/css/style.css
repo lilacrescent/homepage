@@ -1,6 +1,10 @@
 #main {
-    margin: 5px;
-    background-color: blue;
     color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+div {
+    margin: 5px;
     width: 300px;
 }
