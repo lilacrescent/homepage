@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>BlueMeMond</title>
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
@@ -19,20 +19,26 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script>
+            let c = 0;
             $("#add").on("click", function(){
-                
-                swal("タイトル", {
-                    content: "input"
-                })
-                .then((value) => {
-                    const content = value;
-                });
-                swal(content);
-                let div = '<div>';
-                    div += 'title:'
-                    div += content;
-                    div += '</div>';
-                $("#main").append(div);
+                $("#main>div").removeClass("new");
+                c++;
+                const html =
+                    <div class="new">$(c)<textarea id="add_$(c)"></textarea>$(c)</div>
+                ;
+                $("#main").append(html);
+                // swal("タイトル", {
+                //     content: "input"
+                // })
+                // .then((value) => {
+                //     const content = value;
+                // });
+                // swal(content);
+                // let div = '<div>';
+                //     div += 'title:'
+                //     div += content;
+                //     div += '</div>';
+                // $("#main").append(div);
             });
         </script>
     </body>
