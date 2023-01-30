@@ -8,6 +8,7 @@
     </head>
     <body>
         <button id="add">新規作成</button>
+        <button id="save">保存</button>
         <div id="main">
             <div>AAA</div>
             <div>BBB</div>
@@ -24,7 +25,7 @@
                 $("#main>div").removeClass("new");
                 c++;
                 const html =
-                    <div class="new">$(c)<textarea id="add_$(c)"></textarea>$(c)</div>
+                    <div class="new">$(c)<textarea id="add_$(c)" class="memo"></textarea>$(c)</div>
                 ;
                 $("#main").append(html);
                 // swal("タイトル", {
@@ -39,6 +40,14 @@
                 //     div += content;
                 //     div += '</div>';
                 // $("#main").append(div);
+            });
+
+            $("#save").on("clilck", function(){
+                const len = $(".memo").length;
+                let ary = [];
+                for(let i=0; i<len; i++){
+                    ary[i] = $("#add_"+(i+1)).val();
+                }
             });
         </script>
     </body>
