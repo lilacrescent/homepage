@@ -3,21 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>BlueMeMond</title>
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <button id="add">新規作成</button>
         <div id="main">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>AAA</div>
+            <div>BBB</div>
+            <div>CCC</div>
+            <div>DDD</div>
+            <div>EEE</div>
+            <div>FFF</div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script>
+            $("#add").on("click", function(){
+                
+                swal("タイトル", {
+                    content: "input"
+                })
+                .then((value) => {
+                    const content = value;
+                });
+                swal(content);
+                let div = '<div>';
+                    div += 'title:'
+                    div += content;
+                    div += '</div>';
+                $("#main").append(div);
+            });
         </script>
     </body>
 </html>

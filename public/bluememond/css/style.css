@@ -1,8 +1,5 @@
 #main {
     color: aliceblue;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
 div {
     margin: 5px;
